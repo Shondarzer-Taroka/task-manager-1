@@ -129,7 +129,7 @@ const TaskModal = ({ isOpen, onClose, onSubmit, task }) => {
 
           {/* Due Date Picker */}
           <div>
-            <Label>Due Date</Label>
+            <Label>Due Date</Label><br />
             <DatePickerDemo date={dueDate} setDate={setDueDate} />
           </div>
 
