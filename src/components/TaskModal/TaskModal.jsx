@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { DatePickerDemo } from "@/components/ui/DatePickerDemo"; // Importing your DatePicker
+import { DatePickerDemo } from "@/components/ui/DatePickerDemo"; 
 
 const TaskModal = ({ isOpen, onClose, onSubmit, task }) => {
   const [title, setTitle] = useState("");
