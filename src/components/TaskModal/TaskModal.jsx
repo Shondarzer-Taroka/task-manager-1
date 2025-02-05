@@ -12,13 +12,14 @@ const TaskModal = ({ isOpen, onClose, onSubmit, task }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [dueDate, setDueDate] = useState(null);
-
+  const [id,setId]=useState(null)
   // Populate fields when editing a task
   useEffect(() => {
     if (task) {
       setTitle(task.title || "");
       setDescription(task.description || "");
       setDueDate(task.dueDate ? new Date(task.dueDate) : null);
+      setId(task._id || "")
     } else {
       setTitle("");
       setDescription("");
@@ -28,7 +29,7 @@ const TaskModal = ({ isOpen, onClose, onSubmit, task }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit({ title, description, dueDate: dueDate ? dueDate.toISOString() : null }); // Convert date to ISO format
+    onSubmit({ title, description, _id:id, dueDate: dueDate ? dueDate.toISOString() : null }); // Convert date to ISO format
     onClose(); // Close modal after submit
   };
 
