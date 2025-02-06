@@ -26,8 +26,8 @@ A simple task management application built with **Next.js (App Router) and Serve
 First, clone the repository and install dependencies:
 
 ```bash
-git clone <https://github.com/Shondarzer-Taroka/task-manager-1.git>
-cd <task-manager-1>
+git clone https://github.com/Shondarzer-Taroka/task-manager-1.git
+cd task-manager-1
 npm install
 ```
 
