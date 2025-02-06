@@ -51,6 +51,7 @@ const HomePage = () => {
             }
         } else {
             try {
+                setLoading(true)
                 const newTask = await createTask(taskData);
                 if (newTask) {
                     setTasks((prevTasks) => [...prevTasks, newTask]);
@@ -111,4 +112,8 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+
+
+
 
